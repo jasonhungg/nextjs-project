@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -17,7 +17,8 @@ export default function Home() {
           >
             By{' '}
             <Image
-              src="/vercel.svg"
+              // src="/vercel.svg"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/vercel.svg`}
               alt="Vercel Logo"
               className="dark:invert"
               width={100}
@@ -109,5 +110,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }

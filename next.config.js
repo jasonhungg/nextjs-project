@@ -1,9 +1,9 @@
-const isRunningLocally = process.env.NEXT_PUBLIC_RUNNING_LOCALLY === 'true';
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: isRunningLocally ? '' : '/nextjs-project',
+  basePath,
 };
 
 module.exports = nextConfig;
