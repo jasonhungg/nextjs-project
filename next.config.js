@@ -1,10 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  reactStrictMode: true,
+  // reactStrictMode: true,
 
-  // Add basePath
-  basePath: '/nextjs-project',
+  // // Add basePath
+  // basePath: '/nextjs-project',
+  // basePath: '/nextjs-project/',
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
+  assetPrefix: './',
 };
 
 module.exports = nextConfig;
